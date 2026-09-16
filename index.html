@@ -35,36 +35,34 @@
     </div>
 
     <nav>
-      <a href="#" class="active">Home</a>
-      <a href="#about">About</a>
-            <a href="#mission">Mission</a>
-      <a href="#categories">Categories</a>
-      <a href="#prizes">Prizes</a>
-      <a href="#contact">Contact</a>
-    </nav>
+      <a href="#" class="active">HOME</a>
+      <a href="#about">THE MARATHON</a>
+      <a href="#categories">RACE DETAILS</a>
+      <a href="#prizes">PRIZES</a>
+            <a href="#route">ROUTE</a>
+      <a href="#faq">FAQ</a>
+          <a href="#contact">CONTACT</a>
 
-    <a href="#register" class="register-btn">
+    </nav>
+<!--
+    <a href="registration.html" class="register-btn">
       REGISTER NOW
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
     </a>
-
+  -->
     <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </header>
 
   <nav class="mobile-nav" id="mobileNav">
-    <a href="#" class="active">Home</a>
-    <a href="#about">About</a>
-    <a href="#categories">Categories</a>
-    <a href="#mission">Mission</a>
-    <a href="#prizes">Prizes</a>
-    <a href="#faq">FAQ</a>
-    <a href="#contact">Contact</a>
-    <a href="#register" class="register-btn mobile-register">
-      REGISTER NOW
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-    </a>
+    <a href="#" class="active">HOME</a>
+      <a href="#about">THE MARATHON</a>
+      <a href="#categories">RACE DETAILS</a>
+      <a href="#prizes">PRIZES</a>
+            <a href="#route">ROUTE</a>
+      <a href="#faq">FAQ</a>
+          <a href="#contact">CONTACT</a>
   </nav>
 
   <!-- HERO -->
@@ -119,12 +117,48 @@
           Every Step Says No to Drugs
         </div>
 
-        <div class="cta-row">
-          <a href="#register" class="btn-primary">
-            REGISTER NOW
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
+        <div class="cta-row"> 
+
+<div class="registration-countdown" id="registrationCountdown">
+
+    <div class="registration-opening-text">
+        REGISTRATION OPENS TOMORROW AT 5:00 PM
+    </div>
+
+    <div class="countdown-timer">
+
+        <div class="countdown-box">
+            <strong id="regHours">00</strong>
+            <span>HOURS</span>
         </div>
+
+        <div class="countdown-colon">:</div>
+
+        <div class="countdown-box">
+            <strong id="regMinutes">00</strong>
+            <span>MINS</span>
+        </div>
+
+        <div class="countdown-colon">:</div>
+
+        <div class="countdown-box">
+            <strong id="regSeconds">00</strong>
+            <span>SECS</span>
+        </div>
+
+    </div>
+
+</div>
+<!--
+    <a href="registration.html" class="btn-primary"> 
+        REGISTER NOW 
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" 
+             stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 6l6 6-6 6"/>
+        </svg> 
+    </a> 
+  -->
+</div>
 
         <div class="stats-row">
           <div class="stat-item">
@@ -274,6 +308,61 @@
   </div>
 </section>
 
+<!-- SPONSORS & PARTNERS -->
+  
+    <section class="sponsors" id="sponsors">
+    <div class="sponsors-inner">
+
+      <div class="eyebrow center">
+        <span class="rule"></span>
+        OUR PARTNERS
+        <span class="rule"></span>
+      </div>
+
+      <h2 class="sponsors-headline">
+        PROUDLY SUPPORTED BY<br>
+        <span class="accent">OUR SPONSORS</span>
+      </h2>
+
+      <!-- ROW 1 — scrolls right to left -->
+      <div class="sponsor-marquee">
+        <div class="sponsor-track">
+
+          <!-- Set A -->
+          <div class="sponsor-logo">
+            <img src="./assets/image/sponsor-1.png" alt="Sponsor Name">
+          </div>
+          <div class="sponsor-logo">
+            <img src="./assets/image/sponsor-2.png" alt="Sponsor Name">
+          </div>
+          <div class="sponsor-logo">
+            <img src="./assets/image/sponsor-3.png" alt="Sponsor Name">
+          </div>
+          <div class="sponsor-logo">
+            <img src="./assets/image/sponsor-4.png" alt="Sponsor Name">
+          </div>
+          
+
+          <!-- Set B (duplicate of Set A) -->
+          <div class="sponsor-logo">
+            <img src="./assets/image/sponsor-1.png" alt="Sponsor Name">
+          </div>
+          <div class="sponsor-logo">
+            <img src="./assets/image/sponsor-2.png" alt="Sponsor Name">
+          </div>
+          <div class="sponsor-logo">
+            <img src="./assets/image/sponsor-3.png" alt="Sponsor Name">
+          </div>
+          <div class="sponsor-logo">
+            <img src="./assets/image/sponsor-4.png" alt="Sponsor Name">
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
   <!-- OUR MISSION -->
   <section class="mission" id="mission">
     
@@ -358,12 +447,12 @@
       <div class="cat-cards" id="catCards">
         <div class="cat-card">
           <div class="cat-photo blue">
-            <img src="assets/image/cat-men.png" alt="Male runner in JCI Drug-Free Marathon jersey">
+            <img src="assets/image/cat-open.png" alt="Male runner in JCI Drug-Free Marathon jersey">
           </div>
           <div class="cat-body">
             <div class="cat-row">
               <span class="cat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21v-2a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v2"/></svg></span>
-              Open to all men
+              Open to all men & women
             </div>
             <div class="cat-row">
               <span class="cat-ico badge">18+</span>
@@ -376,10 +465,24 @@
                 <div class="amount-label">Registration Fee</div>
               </div>
             </div>
-            <a href="#register" class="cat-btn blue">
-              REGISTER NOW
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </a>
+           <button type="button"
+        class="cat-btn blue registration-modal-btn"
+        data-category="open">
+    REGISTER NOW
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+         stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 12h14M13 6l6 6-6 6"/>
+    </svg>
+</button>
+<!--
+    <a href="registration.html?category=men" class="cat-btn blue">
+    REGISTER NOW
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+         stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 12h14M13 6l6 6-6 6"/>
+    </svg>
+</a>
+-->
           </div>
         </div>
 
@@ -399,14 +502,28 @@
             <div class="cat-fee">
               <span class="cat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12M6 8h12M6 13l8.5 8M6 13h3a4 4 0 0 0 0-8"/></svg></span>
               <div>
-                <div class="amount">&#8377;200</div>
+                <div class="amount">&#8377;300</div>
                 <div class="amount-label">Registration Fee</div>
               </div>
             </div>
-            <a href="#register" class="cat-btn pink">
-              REGISTER NOW
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </a>
+           <button type="button"
+        class="cat-btn pink registration-modal-btn"
+        data-category="women">
+    REGISTER NOW
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+         stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 12h14M13 6l6 6-6 6"/>
+    </svg>
+</button>
+<!--
+    <a href="registration.html?category=women" class="cat-btn pink">
+    REGISTER NOW
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+         stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 12h14M13 6l6 6-6 6"/>
+    </svg>
+</a>
+-->
           </div>
         </div>
 
@@ -430,10 +547,25 @@
                 <div class="amount-label">Registration Fee</div>
               </div>
             </div>
-            <a href="#register" class="cat-btn teal">
-              REGISTER NOW
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </a>
+           <button type="button"
+        class="cat-btn teal registration-modal-btn"
+        data-category="student">
+    REGISTER NOW
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+         stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 12h14M13 6l6 6-6 6"/>
+    </svg>
+</button>
+
+<!--
+ <a href="registration.html?category=student" class="cat-btn teal">
+    REGISTER NOW
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+         stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 12h14M13 6l6 6-6 6"/>
+    </svg>
+</a>
+-->
           </div>
         </div>
       </div>
@@ -479,8 +611,10 @@
         <div class="prize-card-head">
           <span class="pc-runner"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13" cy="4" r="2"/><path d="M9 21l2-6 3 2 2-5M4 14l3-3 4 1"/></svg></span>
           <div>
-            <div class="pc-title">10 KM &ndash; MEN</div>
-            <div class="pc-sub">Open to all men &nbsp;|&nbsp; Age 18+</div>
+           <div class="pc-title">10 KM &ndash; OPEN</div>
+      <div class="pc-sub">
+        Open to all men &amp; women &nbsp;|&nbsp; Age 18+
+      </div>
           </div>
         </div>
         <div class="pc-podium">
@@ -502,7 +636,7 @@
         </div>
         <div class="pc-foot">
           <span>4th &ndash; 10th Prize</span>
-          <span class="pc-each blue">&#8377;3,000 each</span>
+          <span class="pc-each blue">Special Prize</span>
         </div>
       </div>
 
@@ -533,7 +667,7 @@
         </div>
         <div class="pc-foot">
           <span>4th &ndash; 10th Prize</span>
-          <span class="pc-each pink">&#8377;1,000 each</span>
+          <span class="pc-each pink">Special Prize</span>
         </div>
       </div>
 
@@ -564,7 +698,7 @@
         </div>
         <div class="pc-foot">
           <span>4th &ndash; 10th Prize</span>
-          <span class="pc-each teal">&#8377;2,000 each</span>
+          <span class="pc-each teal">Special Prize</span>
         </div>
       </div>
 
@@ -604,7 +738,7 @@
         <div class="pe-card">
           <img src="assets/image/certificate.png" alt="JCI Drug-Free Marathon e-certificate">
           <div>
-            <div class="pe-card-title">E-Certificate</div>
+            <div class="pe-card-title">Certificate</div>
             <div class="pe-card-sub">(for all participants)</div>
           </div>
         </div>
@@ -780,7 +914,7 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13" cy="4" r="2"/><path d="M9 21l2-6 3 2 2-5M4 14l3-3 4 1"/></svg>
         </span>
         <span class="route-tab-text">
-          <span class="route-tab-title">MEN</span>
+          <span class="route-tab-title">OPEN</span>
           <span class="route-tab-sub">10 KM</span>
         </span>
       </button>
@@ -906,60 +1040,136 @@
   </div>
 </section>
 
+<!-- =========================================
+     CHIEF GUESTS
+========================================= -->
 
-  <!-- CHIEF GUEST -->
-  <section class="chief-guest" id="chief-guest">
-    <div class="chief-inner">
-      <div class="eyebrow center">
-          <span class="rule"></span>
-          CHIEF GUEST
-          <span class="rule"></span>
-      </div>
-      <h2 class="chief-headline">
-        HONOURING THE
-        <span class="accent">CHIEF GUEST</span>
-      </h2>
+<section class="chief-guests" id="chief-guests">
 
-      <div class="chief-card">
-        <div class="chief-photo-col">
-          <div class="chief-photo">
-            <img src="assets/image/chief-photo.png" alt="Tmt Jegadeshwari .K">
-          </div>
-          <div class="chief-badge">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="m9 12-1 9 4-2 4 2-1-9"/></svg>
-            CHIEF GUEST &amp; FLAG-OFF PATRON
-          </div>
+    <div class="chief-guests-container">
+
+        <div class="section-heading">
+            <div class="heading-top">
+                <span></span>
+                <p>HONOURED GUESTS</p>
+                <span></span>
+            </div>
+
+            <h2>
+                OUR <em>CHIEF GUESTS</em>
+            </h2>
         </div>
 
-        <div class="chief-details">
-          <div class="chief-eyebrow">GOVERNMENT OF TAMIL NADU &bull; YOUTH EMPOWERMENT</div>
-          <h3 class="chief-name">Tmt Jegadeshwari .K</h3>
-          <div class="chief-designation">Minister of Social Welfare and Women Empowerment</div>
-          <p class="chief-quote">
-            &ldquo;Sport is the ultimate bulwark against substance addiction. When our youth sprint on the streets with
-            pride, energy, and determination, they embody the progressive future of Tamil Nadu. I congratulate
-            JCI Rajapalayam Excel and JCI Chatrapatti for spearheading this monumental civic movement.&rdquo;
-          </p>
-          <div class="chief-stats">
-            <span class="chief-stat">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
-              Official Inauguration: 06:00 AM <!-- Update time -->
-            </span>
-            <span class="chief-stat-sep"></span>
-            <span class="chief-stat">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3a3 3 0 0 1-3 5M7 5H4a3 3 0 0 0 3 5"/></svg>
-              Presiding Over ₹2,00,000 Prize Disbursal <!-- Update amount -->
-            </span>
-          </div>
+
+        <!-- SLIDER -->
+        <div class="guest-slider" id="guestSlider">
+
+            <!-- CARD 1 -->
+            <div class="guest-card">
+
+                <div class="guest-photo">
+                    <img
+                        src="assets/image/chief-photo.png"
+                        alt="Tmt. Jagadeshwari. K">
+                </div>
+
+                <div class="guest-role">
+                    <span>♙</span>
+                    CHIEF GUEST 
+                </div>
+
+                <div class="guest-content">
+
+                    <h3>Tmt. Jagadeshwari. K</h3>
+
+                    <div class="guest-line"></div>
+
+                    <p>
+                        Minister for Social Welfare<br>
+                        and Women Empowerment<br>
+                        Government of Tamil Nadu
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 2 -->
+            <div class="guest-card">
+
+                <div class="guest-photo">
+                    <img
+                        src="assets/image/guest-of-honor.jpeg"
+                        alt="JFG Bharath N. Acharya">
+                </div>
+
+                <div class="guest-role">
+                    <span>★</span>
+                    GUEST OF HONOR
+                </div>
+
+                <div class="guest-content">
+
+                    <h3>JFG Bharath N. Acharya</h3>
+
+                    <div class="guest-line"></div>
+
+                    <p>
+                        National President<br>
+                        JCI India
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 3 -->
+            <div class="guest-card">
+
+                <div class="guest-photo">
+                    <img
+                        src="assets/image/special-invitee.jpeg"
+                        alt="JCI Sen. S. Karthik Bose">
+                </div>
+
+                <div class="guest-role">
+                    <span>★</span>
+                    SPECIAL INVITEE
+                </div>
+
+                <div class="guest-content">
+
+                    <h3>JCI Sen. S. Karthik Bose</h3>
+
+                    <div class="guest-line"></div>
+
+                    <p>
+                        Zone President<br>
+                        Zone 18, JCI India
+                    </p>
+
+                </div>
+
+            </div>
+
         </div>
-      </div>
+
+
+        <!-- MOBILE DOTS -->
+        <div class="guest-dots" id="guestDots">
+            <button class="active" data-index="0"></button>
+            <button data-index="1"></button>
+            <button data-index="2"></button>
+        </div>
+
     </div>
-  </section>
 
+</section>
 
   <!-- FAQ -->
   <section class="faq" id="faq">
-    <div class="faq-tag-left">Same Roads<br>A Healthier<br>Tomorrow</div>
     <div class="faq-tag-right">FIT<br>MINDS<br>DRUG-FREE<br>COMMUNITIES</div>
 
     <div class="faq-inner">
@@ -1120,8 +1330,23 @@
 
         </div>
 
-        <!-- REGISTER BUTTON -->
-        <a href="#categories" class="fc-btn">
+ <button type="button"
+        class="fc-btn registration-modal-btn"
+        >
+    REGISTER NOW
+   <svg viewBox="0 0 24 24"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-width="2.5"
+                 stroke-linecap="round"
+                 stroke-linejoin="round">
+                <path d="M5 12h14"/>
+                <path d="M13 6l6 6-6 6"/>
+            </svg>
+</button>
+
+        <!-- 
+        <a href="registration.html" class="fc-btn">
             REGISTER NOW
 
             <svg viewBox="0 0 24 24"
@@ -1134,7 +1359,7 @@
                 <path d="M13 6l6 6-6 6"/>
             </svg>
         </a>
-
+      -->
         <!-- BOTTOM MESSAGE -->
         <div class="fc-footer">
 
@@ -1160,386 +1385,129 @@
     </div>
 
 </section>
-<!-- =====================================================
-     CONTACT SECTION
-===================================================== -->
-
+<!-- CONTACT SECTION -->
 <section class="contact-section" id="contact">
 
-    <div class="contact-inner">
+    <div class="contact-container">
 
-        <!-- SECTION HEADING -->
+        <!-- Section Heading -->
         <div class="contact-heading">
 
-            <div class="contact-eyebrow">
-
+            <div class="heading-top">
                 <span></span>
-
-                GET IN TOUCH
-
+                <p>GET IN TOUCH</p>
                 <span></span>
-
             </div>
 
             <h2>
-                CONTACT <span>US</span>
+                CONTACT <em>US</em>
             </h2>
 
-            <p>
-                Have questions about registration, categories,
-                or the marathon? We're here to help.
+            <p class="contact-subtitle">
+                Have questions about registration, categories,<br>
+                or the marathon? We’re here to help.
             </p>
 
         </div>
 
 
-        <!-- CONTACT CONTENT -->
-        <div class="contact-grid">
+        <!-- Contact Cards -->
+        <div class="contact-cards">
 
+            <!-- Location -->
+            <div class="contact-card location-card">
 
-            <!-- =================================================
-                 LEFT SIDE
-            ================================================== -->
-
-            <div class="contact-info">
-
-
-                <div class="contact-info-title">
-
-                    <h3>
-                        LET'S RUN
-                        <br>
-                        <span>TOGETHER</span>
-                    </h3>
-
-                    <p>
-                        Join the movement for a healthier,
-                        stronger and drug-free Tamil Nadu.
-                    </p>
-
+                <div class="contact-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 21s7-7.2 7-12a7 7 0 1 0-14 0c0 4.8 7 12 7 12z"></path>
+                        <circle cx="12" cy="9" r="2.2"></circle>
+                    </svg>
                 </div>
 
+                <h3>EVENT LOCATION</h3>
 
-                <!-- LOCATION -->
-                <div class="contact-item">
-
-                    <div class="contact-icon">
-
-                        <i class="fa-solid fa-location-dot"></i>
-
-                    </div>
-
-                    <div>
-
-                        <h4>EVENT LOCATION</h4>
-
-                        <p>
-                            Rajapalayam,<br>
-                            Tamil Nadu, India
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <!-- PHONE -->
-                <div class="contact-item">
-
-                    <div class="contact-icon">
-
-                        <i class="fa-solid fa-phone"></i>
-
-                    </div>
-
-                    <div>
-
-                        <h4>CALL US</h4>
-
-                        <p>
-                            +91 XXXXX XXXXX
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <!-- EMAIL -->
-                <div class="contact-item">
-
-                    <div class="contact-icon">
-
-                        <i class="fa-solid fa-envelope"></i>
-
-                    </div>
-
-                    <div>
-
-                        <h4>EMAIL US</h4>
-
-                        <p>
-                            info@jcimarathon.com
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <!-- DATE -->
-                <div class="contact-item">
-
-                    <div class="contact-icon">
-
-                        <i class="fa-regular fa-calendar-days"></i>
-
-                    </div>
-
-                    <div>
-
-                        <h4>MARATHON DATE</h4>
-
-                        <p>
-                            26 September 2026<br>
-                            Saturday
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <!-- SOCIAL -->
-                <div class="contact-social">
-
-                    <a href="#" aria-label="Facebook">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
-
-                    <a href="#" aria-label="Instagram">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-
-                    <a href="#" aria-label="YouTube">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
-
-                    <a href="#" aria-label="WhatsApp">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </a>
-
-                </div>
+                <p>
+                    Rajapalayam,<br>
+                    Tamil Nadu, India
+                </p>
 
             </div>
 
 
+            <!-- Phone -->
+           <div class="contact-card phone-card">
 
-            <!-- =================================================
-                 RIGHT SIDE FORM
-            ================================================== -->
+    <div class="contact-icon">
+        <svg viewBox="0 0 24 24">
+            <path d="M6.6 3.5l3 3.5-2 2.5c1.2 2.5 2.8 4.1 5.3 5.3l2.5-2 3.5 3c.5.4.7 1 .5 1.6-.4 1.4-1.5 2.6-3 2.8-1.8.2-5.1-.9-8.2-3.9S3.1 9.6 3.3 7.8c.2-1.5 1.3-2.6 2.8-3 .2-.1.4-.1.5-.1z"></path>
+        </svg>
+    </div>
 
-            <div class="contact-form-box">
+    <h3>CALL US</h3>
 
-                <div class="form-heading">
+    <p>
+        <a href="tel:+917871910260">
+            +91 78719 10260
+        </a>
+        /
+        <a href="tel:+919940269862">
+            +91 99402 69862
+        </a>
+    </p>
 
-                    <h3>
-                        SEND US A MESSAGE
-                    </h3>
+</div>
 
-                    <p>
-                        Fill in the details and our team
-                        will get back to you.
-                    </p>
 
+            <!-- Email -->
+            <div class="contact-card email-card">
+
+                <div class="contact-icon">
+                    <svg viewBox="0 0 24 24">
+                        <rect x="3" y="5" width="18" height="14" rx="1.5"></rect>
+                        <path d="M4 7l8 6 8-6"></path>
+                    </svg>
                 </div>
 
-
-                <form id="contactForm">
-
-
-                    <!-- NAME + PHONE -->
-
-                    <div class="contact-row">
-
-                        <div class="contact-field">
-
-                            <label for="contactName">
-                                YOUR NAME
-                            </label>
-
-                            <div class="input-wrap">
-
-                                <i class="fa-regular fa-user"></i>
-
-                                <input
-                                    type="text"
-                                    id="contactName"
-                                    name="name"
-                                    placeholder="Enter your name"
-                                    required>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="contact-field">
-
-                            <label for="contactPhone">
-                                MOBILE NUMBER
-                            </label>
-
-                            <div class="input-wrap">
-
-                                <i class="fa-solid fa-phone"></i>
-
-                                <input
-                                    type="tel"
-                                    id="contactPhone"
-                                    name="phone"
-                                    placeholder="Enter mobile number"
-                                    maxlength="10"
-                                    required>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- EMAIL -->
-
-                    <div class="contact-field">
-
-                        <label for="contactEmail">
-                            EMAIL ADDRESS
-                        </label>
-
-                        <div class="input-wrap">
-
-                            <i class="fa-regular fa-envelope"></i>
-
-                            <input
-                                type="email"
-                                id="contactEmail"
-                                name="email"
-                                placeholder="Enter your email"
-                                required>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- SUBJECT -->
-
-                    <div class="contact-field">
-
-                        <label for="contactSubject">
-                            SUBJECT
-                        </label>
-
-                        <div class="input-wrap">
-
-                            <i class="fa-regular fa-pen-to-square"></i>
-
-                            <select
-                                id="contactSubject"
-                                name="subject"
-                                required>
-
-                                <option value="">
-                                    Select a subject
-                                </option>
-
-                                <option value="registration">
-                                    Registration
-                                </option>
-
-                                <option value="categories">
-                                    Categories & Fees
-                                </option>
-
-                                <option value="payment">
-                                    Payment
-                                </option>
-
-                                <option value="event">
-                                    Event Information
-                                </option>
-
-                                <option value="sponsorship">
-                                    Sponsorship
-                                </option>
-
-                                <option value="other">
-                                    Other
-                                </option>
-
-                            </select>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- MESSAGE -->
-
-                    <div class="contact-field">
-
-                        <label for="contactMessage">
-                            MESSAGE
-                        </label>
-
-                        <div class="textarea-wrap">
-
-                            <i class="fa-regular fa-message"></i>
-
-                            <textarea
-                                id="contactMessage"
-                                name="message"
-                                rows="4"
-                                placeholder="Write your message..."
-                                required></textarea>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- SUBMIT -->
-
-                    <button
-                        type="submit"
-                        class="contact-submit">
-
-                        SEND MESSAGE
-
-                        <i class="fa-solid fa-arrow-right"></i>
-
-                    </button>
-
-
-                    <!-- SUCCESS MESSAGE -->
-
-                    <div
-                        id="contactSuccess"
-                        class="contact-success">
-
-                        <i class="fa-solid fa-circle-check"></i>
-
-                        Thank you! Your message has been
-                        submitted successfully.
-
-                    </div>
-
-                </form>
+                <h3>EMAIL US</h3>
+
+              <p>
+    <a href="mailto:rajapalayammarathon@gmail.com">
+        rajapalayammarathon@gmail.com
+    </a>
+</p>
+
+            </div>
+
+
+            <!-- Date -->
+            <div class="contact-card date-card">
+
+                <div class="contact-icon">
+                    <svg viewBox="0 0 24 24">
+                        <rect x="4" y="5" width="16" height="15" rx="2"></rect>
+                        <path d="M8 3v4M16 3v4M4 9h16"></path>
+                        <circle cx="8" cy="13" r=".8"></circle>
+                        <circle cx="12" cy="13" r=".8"></circle>
+                        <circle cx="16" cy="13" r=".8"></circle>
+                        <circle cx="8" cy="16" r=".8"></circle>
+                        <circle cx="12" cy="16" r=".8"></circle>
+                        <circle cx="16" cy="16" r=".8"></circle>
+                    </svg>
+                </div>
+
+                <h3>MARATHON DATE</h3>
+
+                <p>
+                    26 September 2026<br>
+                    Saturday
+                </p>
 
             </div>
 
         </div>
+
+
+     
 
     </div>
 
@@ -1613,11 +1581,11 @@
                     </li>
 
                     <li>
-                        <a href="#about">About</a>
+                        <a href="#about">THE MARATHON</a>
                     </li>
 
                     <li>
-                        <a href="#categories">Categories &amp; Fees</a>
+                        <a href="#categories">RACE DETAILS</a>
                     </li>
 
                     <li>
@@ -1625,11 +1593,7 @@
                     </li>
 
                     <li>
-                        <a href="#route">Route &amp; Venue</a>
-                    </li>
-
-                    <li>
-                        <a href="#instructions">Race Instructions</a>
+                        <a href="#route">ROUTE</a>
                     </li>
 
                     <li>
@@ -1637,7 +1601,7 @@
                     </li>
 
                     <li>
-                        <a href="#contact">Contact</a>
+                        <a href="#contact">CONTACT</a>
                     </li>
 
                 </ul>
@@ -1710,31 +1674,45 @@
 
                 <div class="footer-heading-line"></div>
 
+
                 <p class="footer-connect-text">
-                    Follow us for the latest updates,<br>
-                    event news and more.
+                    For registration, event updates<br>
+                    and other enquiries.
                 </p>
 
 
-                <!-- SOCIAL ICONS -->
+                <!-- EMAIL -->
 
-                <div class="footer-social">
+                <div class="footer-contact-item">
 
-                    <a href="#" class="facebook">
-                        <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <a href="mailto:rajapalayammarathon@gmail.com">
+                        rajapalayammarathon@gmail.com
                     </a>
 
-                    <a href="#" class="instagram">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
+                </div>
+<br>
 
-                    <a href="#" class="youtube">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
+                <!-- PHONE -->
 
-                    <a href="#" class="linkedin">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </a>
+                <div class="footer-contact-item">
+
+
+                    <div>
+                    <i class="fa-solid fa-phone"></i>
+
+                        <a href="tel:+919150744096">
+                            +91 91507 44096
+                        </a>
+
+                        <span class="footer-phone-separator"> / </span>
+
+                        <a href="tel:+919876543210">
+                            +91 98765 43210
+                        </a>
+
+                    </div>
 
                 </div>
 
@@ -1760,9 +1738,11 @@
                     <div class="slogan-divider"></div>
 
                     <div class="slogan-right">
+
                         <span>RUN</span>
                         <span>INSPIRE</span>
                         <span>CHANGE</span>
+
                     </div>
 
                 </div>
@@ -1793,11 +1773,6 @@
             </div>
 
 
-            <!-- LEGAL LINKS -->
-
-        
-
-
             <!-- DEVELOPED BY -->
 
             <div class="footer-developed">
@@ -1805,8 +1780,6 @@
                 <span>Developed by</span>
 
                 <a href="#" class="beycan-brand">
-
-                   
 
                     <strong>
                         Beycan Technologies Pvt Ltd
@@ -2689,7 +2662,901 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const slider = document.getElementById("guestSlider");
+    const dots = document.querySelectorAll("#guestDots button");
+
+    if (!slider) return;
+
+    const cards = slider.querySelectorAll(".guest-card");
+
+    let currentIndex = 0;
+    let autoSlide;
+    let isUserInteracting = false;
+
+
+    /* =========================================
+       UPDATE DOT
+    ========================================= */
+
+    function updateDot(index) {
+
+        dots.forEach(function (dot, i) {
+            dot.classList.toggle(
+                "active",
+                i === index
+            );
+        });
+
+    }
+
+
+    /* =========================================
+       GO TO CARD
+    ========================================= */
+
+    function goToCard(index) {
+
+        if (window.innerWidth > 768) return;
+
+        if (index >= cards.length) {
+            index = 0;
+        }
+
+        if (index < 0) {
+            index = cards.length - 1;
+        }
+
+        currentIndex = index;
+
+        const card = cards[currentIndex];
+
+        slider.scrollTo({
+            left:
+                card.offsetLeft -
+                slider.offsetLeft -
+                20,
+            behavior: "smooth"
+        });
+
+        updateDot(currentIndex);
+    }
+
+
+    /* =========================================
+       AUTO SLIDE
+    ========================================= */
+
+    function startAutoSlide() {
+
+        stopAutoSlide();
+
+        autoSlide = setInterval(function () {
+
+            if (!isUserInteracting) {
+                goToCard(currentIndex + 1);
+            }
+
+        }, 3000);
+
+    }
+
+
+    function stopAutoSlide() {
+
+        if (autoSlide) {
+            clearInterval(autoSlide);
+        }
+
+    }
+
+
+    /* =========================================
+       DETECT MANUAL SCROLL
+    ========================================= */
+
+    let scrollTimer;
+
+    slider.addEventListener("scroll", function () {
+
+        if (window.innerWidth > 768) return;
+
+        clearTimeout(scrollTimer);
+
+        scrollTimer = setTimeout(function () {
+
+            let closestIndex = 0;
+            let smallestDistance = Infinity;
+
+            cards.forEach(function (card, index) {
+
+                const distance = Math.abs(
+                    card.offsetLeft -
+                    slider.scrollLeft -
+                    20
+                );
+
+                if (distance < smallestDistance) {
+                    smallestDistance = distance;
+                    closestIndex = index;
+                }
+
+            });
+
+            currentIndex = closestIndex;
+            updateDot(currentIndex);
+
+        }, 80);
+
+    });
+
+
+    /* =========================================
+       TOUCH / POINTER
+    ========================================= */
+
+    slider.addEventListener("touchstart", function () {
+
+        isUserInteracting = true;
+        stopAutoSlide();
+
+    }, { passive: true });
+
+
+    slider.addEventListener("touchend", function () {
+
+        setTimeout(function () {
+
+            isUserInteracting = false;
+            startAutoSlide();
+
+        }, 1200);
+
+    }, { passive: true });
+
+
+    /* =========================================
+       DOT CLICK
+    ========================================= */
+
+    dots.forEach(function (dot) {
+
+        dot.addEventListener("click", function () {
+
+            const index =
+                Number(this.dataset.index);
+
+            isUserInteracting = true;
+
+            goToCard(index);
+
+            stopAutoSlide();
+
+            setTimeout(function () {
+
+                isUserInteracting = false;
+                startAutoSlide();
+
+            }, 1500);
+
+        });
+
+    });
+
+
+    /* =========================================
+       START
+    ========================================= */
+
+    updateDot(0);
+    startAutoSlide();
+
+
+    /* =========================================
+       RESIZE
+    ========================================= */
+
+    window.addEventListener("resize", function () {
+
+        if (window.innerWidth > 768) {
+
+            stopAutoSlide();
+
+        } else {
+
+            startAutoSlide();
+
+        }
+
+    });
+
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    // Registration opening time
+    const registrationOpenTime =
+        new Date("2026-09-17T17:00:00+05:30").getTime();
+
+    const hoursEl = document.getElementById("regHours");
+    const minutesEl = document.getElementById("regMinutes");
+    const secondsEl = document.getElementById("regSeconds");
+
+
+    function updateCountdown() {
+
+        const now = Date.now();
+        const distance = registrationOpenTime - now;
+
+
+        // Countdown completed
+        if (distance <= 0) {
+            hoursEl.textContent = "00";
+            minutesEl.textContent = "00";
+            secondsEl.textContent = "00";
+
+            clearInterval(timer);
+            return;
+        }
+
+
+        const hours = Math.floor(
+            distance / (1000 * 60 * 60)
+        );
+
+        const minutes = Math.floor(
+            (distance % (1000 * 60 * 60)) /
+            (1000 * 60)
+        );
+
+        const seconds = Math.floor(
+            (distance % (1000 * 60)) /
+            1000
+        );
+
+
+        hoursEl.textContent =
+            String(hours).padStart(2, "0");
+
+        minutesEl.textContent =
+            String(minutes).padStart(2, "0");
+
+        secondsEl.textContent =
+            String(seconds).padStart(2, "0");
+    }
+
+
+    updateCountdown();
+
+    const timer = setInterval(updateCountdown, 1000);
+
+});
+
   </script>
+
+
+<!-- =========================================================
+     REGISTRATION COUNTDOWN MODAL
+========================================================= -->
+
+<style>
+.registration-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.registration-modal.show {
+    display: flex;
+}
+
+.registration-modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(3, 15, 35, 0.78);
+    backdrop-filter: blur(7px);
+}
+
+.registration-modal .modal-dialog {
+    position: relative;
+    z-index: 2;
+    width: min(520px, 100%);
+    margin: 0;
+}
+
+.registration-modal .modal-content {
+    overflow: hidden;
+    border: 0;
+    border-radius: 24px;
+    background: #ffffff;
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.30);
+}
+
+.registration-modal-top {
+    padding: 28px 28px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #06285f 0%, #0b438d 100%);
+    color: #ffffff;
+}
+
+.registration-modal-icon {
+    width: 58px;
+    height: 58px;
+    margin: 0 auto 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255,255,255,.14);
+    font-size: 27px;
+}
+
+.registration-modal-top h2 {
+    margin: 0;
+    font-size: 26px;
+    font-weight: 900;
+    letter-spacing: .3px;
+}
+
+.registration-modal-category {
+    margin: 8px 0 0;
+    font-size: 14px;
+    font-weight: 700;
+    opacity: .9;
+}
+
+.registration-modal-body {
+    padding: 26px 24px 28px;
+    text-align: center;
+}
+
+.registration-modal-label {
+    margin: 0 0 16px;
+    color: #667792;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.modal-countdown-timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.modal-countdown-box {
+    min-width: 92px;
+    height: 88px;
+    padding: 10px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    background: #edf3fb;
+}
+
+.modal-countdown-box strong {
+    color: #06285f;
+    font-size: 30px;
+    line-height: 1;
+    font-weight: 900;
+}
+
+.modal-countdown-box span {
+    margin-top: 8px;
+    color: #667792;
+    font-size: 10px;
+    line-height: 1;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.modal-countdown-colon {
+    color: #b8c6d9;
+    font-size: 26px;
+    font-weight: 900;
+}
+
+.modal-opening-time {
+    margin: 20px 0 0;
+    color: #44546a;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.modal-opening-time strong {
+    color: #06285f;
+}
+
+.modal-register-now {
+    display: none;
+    margin-top: 20px;
+    width: 100%;
+    border: 0;
+    border-radius: 12px;
+    padding: 13px 18px;
+    background: #06285f;
+    color: #ffffff;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.modal-register-now:hover {
+    color: #ffffff;
+    background: #0b438d;
+}
+
+.registration-modal-close {
+    position: absolute;
+    z-index: 4;
+    top: 14px;
+    right: 14px;
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(255,255,255,.16);
+    color: #ffffff;
+    font-size: 25px;
+    line-height: 1;
+}
+
+.registration-modal-close:hover {
+    background: rgba(255,255,255,.28);
+}
+
+body.registration-modal-open {
+    overflow: hidden;
+}
+
+@media (max-width: 576px) {
+    .registration-modal {
+        padding: 14px;
+    }
+
+    .registration-modal-top {
+        padding: 24px 18px 18px;
+    }
+
+    .registration-modal-top h2 {
+        font-size: 22px;
+    }
+
+    .registration-modal-body {
+        padding: 22px 14px 24px;
+    }
+
+    .modal-countdown-timer {
+        gap: 5px;
+    }
+
+    .modal-countdown-box {
+        min-width: 70px;
+        height: 70px;
+        border-radius: 12px;
+    }
+
+    .modal-countdown-box strong {
+        font-size: 24px;
+    }
+
+    .modal-countdown-box span {
+        margin-top: 6px;
+        font-size: 8px;
+    }
+
+    .modal-countdown-colon {
+        font-size: 21px;
+    }
+}
+</style>
+
+<div class="registration-modal"
+     id="registrationModal"
+     aria-hidden="true"
+     role="dialog"
+     aria-modal="true"
+     aria-labelledby="registrationModalTitle">
+
+    <div class="registration-modal-backdrop" id="registrationModalBackdrop"></div>
+
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="registration-modal-top">
+
+                <button type="button"
+                        class="registration-modal-close"
+                        id="registrationModalClose"
+                        aria-label="Close">
+                    &times;
+                </button>
+
+                <div class="registration-modal-icon">
+                    <i class="fa-solid fa-person-running"></i>
+                </div>
+
+                <h2 id="registrationModalTitle">
+                    REGISTRATION OPENS SOON
+                </h2>
+
+                <p class="registration-modal-category"
+                   id="registrationModalCategory">
+                    Registration
+                </p>
+
+            </div>
+
+            <div class="registration-modal-body">
+
+                <p class="registration-modal-label">
+                    Registration Opens In
+                </p>
+
+                <div class="modal-countdown-timer">
+
+                    <div class="modal-countdown-box">
+                        <strong id="modalHours">00</strong>
+                        <span>HOURS</span>
+                    </div>
+
+                    <div class="modal-countdown-colon">:</div>
+
+                    <div class="modal-countdown-box">
+                        <strong id="modalMinutes">00</strong>
+                        <span>MINS</span>
+                    </div>
+
+                    <div class="modal-countdown-colon">:</div>
+
+                    <div class="modal-countdown-box">
+                        <strong id="modalSeconds">00</strong>
+                        <span>SECS</span>
+                    </div>
+
+                </div>
+
+                <p class="modal-opening-time" id="modalOpeningTime">
+                    Registration opens on
+                    <strong>17 September 2026 at 5:00 PM</strong>.
+                </p>
+
+                <a href="#"
+                   class="modal-register-now"
+                   id="modalRegisterNow">
+                    CONTINUE TO REGISTRATION
+                    <i class="fa-solid fa-arrow-right ms-2"></i>
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    /* =====================================================
+       REGISTRATION OPENING TIME
+       17 September 2026 - 5:00 PM IST
+    ===================================================== */
+
+    const registrationOpenTime =
+        new Date("2026-09-17T17:00:00+05:30").getTime();
+
+
+    /* =====================================================
+       HERO COUNTDOWN
+    ===================================================== */
+
+    const heroHours = document.getElementById("regHours");
+    const heroMinutes = document.getElementById("regMinutes");
+    const heroSeconds = document.getElementById("regSeconds");
+
+    let heroTimer = null;
+
+    function updateHeroCountdown() {
+
+        if (!heroHours || !heroMinutes || !heroSeconds) {
+            return;
+        }
+
+        const distance =
+            registrationOpenTime - Date.now();
+
+        if (distance <= 0) {
+
+            heroHours.textContent = "00";
+            heroMinutes.textContent = "00";
+            heroSeconds.textContent = "00";
+
+            if (heroTimer) {
+                clearInterval(heroTimer);
+            }
+
+            return;
+        }
+
+        const hours = Math.floor(
+            distance / (1000 * 60 * 60)
+        );
+
+        const minutes = Math.floor(
+            (distance % (1000 * 60 * 60)) /
+            (1000 * 60)
+        );
+
+        const seconds = Math.floor(
+            (distance % (1000 * 60)) /
+            1000
+        );
+
+        heroHours.textContent =
+            String(hours).padStart(2, "0");
+
+        heroMinutes.textContent =
+            String(minutes).padStart(2, "0");
+
+        heroSeconds.textContent =
+            String(seconds).padStart(2, "0");
+    }
+
+    updateHeroCountdown();
+
+    heroTimer =
+        setInterval(updateHeroCountdown, 1000);
+
+
+    /* =====================================================
+       REGISTRATION MODAL
+    ===================================================== */
+
+    const modal =
+        document.getElementById("registrationModal");
+
+    const backdrop =
+        document.getElementById("registrationModalBackdrop");
+
+    const closeButton =
+        document.getElementById("registrationModalClose");
+
+    const modalCategory =
+        document.getElementById("registrationModalCategory");
+
+    const modalTitle =
+        document.getElementById("registrationModalTitle");
+
+    const modalOpeningTime =
+        document.getElementById("modalOpeningTime");
+
+    const modalRegisterNow =
+        document.getElementById("modalRegisterNow");
+
+    const modalHours =
+        document.getElementById("modalHours");
+
+    const modalMinutes =
+        document.getElementById("modalMinutes");
+
+    const modalSeconds =
+        document.getElementById("modalSeconds");
+
+    let modalTimer = null;
+    let selectedCategory = "open";
+
+
+    /* =====================================================
+       CATEGORY DETAILS
+    ===================================================== */
+
+    const categoryDetails = {
+
+        open: {
+            name: "10 KM • OPEN",
+            url: "registration.html?category=open"
+        },
+
+        women: {
+            name: "3 KM • WOMEN",
+            url: "registration.html?category=women"
+        },
+
+        student: {
+            name: "5 KM • STUDENTS",
+            url: "registration.html?category=student"
+        }
+
+    };
+
+
+    /* =====================================================
+       UPDATE MODAL COUNTDOWN
+    ===================================================== */
+
+    function updateModalCountdown() {
+
+        const distance =
+            registrationOpenTime - Date.now();
+
+        if (distance <= 0) {
+
+            modalHours.textContent = "00";
+            modalMinutes.textContent = "00";
+            modalSeconds.textContent = "00";
+
+            modalTitle.textContent =
+                "REGISTRATION IS NOW OPEN";
+
+            modalOpeningTime.innerHTML =
+                "Registration is now available. Click below to continue.";
+
+            modalRegisterNow.style.display =
+                "block";
+
+            if (modalTimer) {
+                clearInterval(modalTimer);
+                modalTimer = null;
+            }
+
+            return;
+        }
+
+        const hours = Math.floor(
+            distance / (1000 * 60 * 60)
+        );
+
+        const minutes = Math.floor(
+            (distance % (1000 * 60 * 60)) /
+            (1000 * 60)
+        );
+
+        const seconds = Math.floor(
+            (distance % (1000 * 60)) /
+            1000
+        );
+
+        modalHours.textContent =
+            String(hours).padStart(2, "0");
+
+        modalMinutes.textContent =
+            String(minutes).padStart(2, "0");
+
+        modalSeconds.textContent =
+            String(seconds).padStart(2, "0");
+
+        modalTitle.textContent =
+            "REGISTRATION OPENS SOON";
+
+        modalOpeningTime.innerHTML =
+            'Registration opens on <strong>17 September 2026 at 5:00 PM</strong>.';
+
+        modalRegisterNow.style.display =
+            "none";
+    }
+
+
+    /* =====================================================
+       OPEN MODAL
+    ===================================================== */
+
+    document.querySelectorAll(
+        ".registration-modal-btn"
+    ).forEach(function (button) {
+
+        button.addEventListener(
+            "click",
+            function () {
+
+                selectedCategory =
+                    this.dataset.category || "open";
+
+                const details =
+                    categoryDetails[selectedCategory] ||
+                    categoryDetails.open;
+
+                modalCategory.textContent =
+                    details.name;
+
+                modalRegisterNow.href =
+                    details.url;
+
+                updateModalCountdown();
+
+                modal.classList.add("show");
+                modal.setAttribute(
+                    "aria-hidden",
+                    "false"
+                );
+
+                document.body.classList.add(
+                    "registration-modal-open"
+                );
+
+                clearInterval(modalTimer);
+
+                modalTimer =
+                    setInterval(
+                        updateModalCountdown,
+                        1000
+                    );
+            }
+        );
+
+    });
+
+
+    /* =====================================================
+       CLOSE MODAL
+    ===================================================== */
+
+    function closeRegistrationModal() {
+
+        modal.classList.remove("show");
+
+        modal.setAttribute(
+            "aria-hidden",
+            "true"
+        );
+
+        document.body.classList.remove(
+            "registration-modal-open"
+        );
+
+        if (modalTimer) {
+
+            clearInterval(modalTimer);
+            modalTimer = null;
+
+        }
+    }
+
+    closeButton.addEventListener(
+        "click",
+        closeRegistrationModal
+    );
+
+    backdrop.addEventListener(
+        "click",
+        closeRegistrationModal
+    );
+
+
+    /* =====================================================
+       ESC KEY
+    ===================================================== */
+
+    document.addEventListener(
+        "keydown",
+        function (event) {
+
+            if (
+                event.key === "Escape" &&
+                modal.classList.contains("show")
+            ) {
+                closeRegistrationModal();
+            }
+
+        }
+    );
+
+});
+</script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
+
