@@ -3,8 +3,57 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JCI Drug-Free Marathon 2026 | Rajapalayam</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<!-- SEO META TAGS -->
+<meta name="description"
+      content="JCI Drug-Free Marathon 2026 in Rajapalayam, Tamil Nadu on 26 September 2026. Join the 10 KM Open, 3 KM Women and 5 KM Student runs. Run for a drug-free Tamil Nadu.">
+
+<meta name="keywords"
+      content="JCI Drug-Free Marathon 2026, Rajapalayam Marathon 2026, Rajapalayam Marathon, Marathon Tamil Nadu, Drug-Free Marathon, 10 KM Marathon, 3 KM Women Marathon, 5 KM Student Marathon, JCI Rajapalayam Excel, JCI Chatrapatti">
+
+<meta name="author"
+      content="JCI Rajapalayam Excel & JCI Chatrapatti">
+
+<meta name="robots"
+      content="index, follow, max-image-preview:large">
+
+<meta name="theme-color"
+      content="#0B1F4E">
+\
+
+<!-- OPEN GRAPH / FACEBOOK / WHATSAPP -->
+<meta property="og:type"
+      content="website">
+
+<meta property="og:title"
+      content="JCI Drug-Free Marathon 2026 | Rajapalayam">
+
+<meta property="og:description"
+      content="Join JCI Drug-Free Marathon 2026 in Rajapalayam on 26 September 2026. 10 KM Open, 3 KM Women and 5 KM Student categories.">
+
+
+
+<meta property="og:site_name"
+      content="JCI Drug-Free Marathon 2026">
+
+<meta property="og:image"
+      content="https://rajapalayammarathon.in/assets/image/hero-bg.png">
+
+<meta property="og:image:alt"
+      content="JCI Drug-Free Marathon 2026 Rajapalayam">
+
+<!-- TWITTER / X -->
+<meta name="twitter:card"
+      content="summary_large_image">
+
+<meta name="twitter:title"
+      content="JCI Drug-Free Marathon 2026 | Rajapalayam">
+
+<meta name="twitter:description"
+      content="JCI Drug-Free Marathon 2026 — 26 September 2026, Rajapalayam, Tamil Nadu.">
+
+<title>JCI Drug-Free Marathon 2026 | Rajapalayam Marathon | 26 September 2026</title>
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -341,7 +390,9 @@
           <div class="sponsor-logo">
             <img src="./assets/image/sponsor-4.png" alt="Sponsor Name">
           </div>
-          
+          <div class="sponsor-logo">
+            <img src="./assets/image/sponsor-5.jpeg" alt="Sponsor Name">
+          </div>
 
           <!-- Set B (duplicate of Set A) -->
           <div class="sponsor-logo">
@@ -356,7 +407,9 @@
           <div class="sponsor-logo">
             <img src="./assets/image/sponsor-4.png" alt="Sponsor Name">
           </div>
-
+<div class="sponsor-logo">
+            <img src="./assets/image/sponsor-5.jpeg" alt="Sponsor Name">
+          </div>
         </div>
       </div>
 
@@ -1779,7 +1832,7 @@
 
                 <span>Developed by</span>
 
-                <a href="#" class="beycan-brand">
+                <a href="https://beycanrobotics.com/" class="beycan-brand">
 
                     <strong>
                         Beycan Technologies Pvt Ltd
@@ -3552,6 +3605,188 @@ document.addEventListener("DOMContentLoaded", function () {
     );
 
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const cardsContainer = document.querySelector(".pe-cards");
+
+    if (!cardsContainer) return;
+
+    const MOBILE_BREAKPOINT = 900;
+    const AUTO_SCROLL_INTERVAL = 2200;
+    const SCROLL_STEP = 296;
+
+    let timer = null;
+    let isTouching = false;
+
+    function isMobile() {
+        return window.innerWidth <= MOBILE_BREAKPOINT;
+    }
+
+    function enableSlider() {
+
+        if (!isMobile()) return;
+
+        cardsContainer.style.display = "flex";
+        cardsContainer.style.flexDirection = "row";
+        cardsContainer.style.flexWrap = "nowrap";
+
+        cardsContainer.style.overflowX = "auto";
+        cardsContainer.style.overflowY = "hidden";
+
+        cardsContainer.style.scrollBehavior = "smooth";
+        cardsContainer.style.webkitOverflowScrolling = "touch";
+
+        const cards = cardsContainer.querySelectorAll(".pe-card");
+
+        cards.forEach(function (card) {
+
+            card.style.flex = "0 0 280px";
+            card.style.width = "280px";
+            card.style.minWidth = "280px";
+
+        });
+    }
+
+    function disableSlider() {
+
+        if (isMobile()) return;
+
+        cardsContainer.style.display = "";
+        cardsContainer.style.flexDirection = "";
+        cardsContainer.style.flexWrap = "";
+
+        cardsContainer.style.overflowX = "";
+        cardsContainer.style.overflowY = "";
+
+        cardsContainer.style.scrollBehavior = "";
+
+        const cards = cardsContainer.querySelectorAll(".pe-card");
+
+        cards.forEach(function (card) {
+
+            card.style.flex = "";
+            card.style.width = "";
+            card.style.minWidth = "";
+
+        });
+    }
+
+    function stopAutoScroll() {
+
+        if (timer) {
+            clearInterval(timer);
+            timer = null;
+        }
+
+    }
+
+    function startAutoScroll() {
+
+        stopAutoScroll();
+
+        if (!isMobile()) return;
+
+        timer = setInterval(function () {
+
+            if (!isMobile() || isTouching) return;
+
+            const maxScroll =
+                cardsContainer.scrollWidth -
+                cardsContainer.clientWidth;
+
+            if (maxScroll <= 0) return;
+
+            const nextPosition =
+                cardsContainer.scrollLeft + SCROLL_STEP;
+
+            if (nextPosition >= maxScroll - 5) {
+
+                cardsContainer.scrollTo({
+                    left: 0,
+                    behavior: "smooth"
+                });
+
+            } else {
+
+                cardsContainer.scrollTo({
+                    left: nextPosition,
+                    behavior: "smooth"
+                });
+
+            }
+
+        }, AUTO_SCROLL_INTERVAL);
+
+    }
+
+    function setupSlider() {
+
+        if (isMobile()) {
+
+            enableSlider();
+            startAutoScroll();
+
+        } else {
+
+            stopAutoScroll();
+            disableSlider();
+
+        }
+
+    }
+
+    /* Pause when user touches/swipes */
+
+    cardsContainer.addEventListener("touchstart", function () {
+
+        isTouching = true;
+        stopAutoScroll();
+
+    }, { passive: true });
+
+
+    cardsContainer.addEventListener("touchend", function () {
+
+        isTouching = false;
+
+        if (isMobile()) {
+
+            setTimeout(function () {
+                startAutoScroll();
+            }, 1200);
+
+        }
+
+    }, { passive: true });
+
+
+    /* Pause when mouse is over cards */
+
+    cardsContainer.addEventListener("mouseenter", function () {
+
+        if (isMobile()) {
+            stopAutoScroll();
+        }
+
+    });
+
+
+    cardsContainer.addEventListener("mouseleave", function () {
+
+        if (isMobile()) {
+            startAutoScroll();
+        }
+
+    });
+
+
+    window.addEventListener("resize", setupSlider);
+
+    setupSlider();
+
+});
+
 </script>
 
 <!-- Bootstrap JS -->
